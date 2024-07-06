@@ -1,0 +1,13 @@
+a{
+    color: red;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    height: 9vh;
+    align-items: center;
+
+    
+}

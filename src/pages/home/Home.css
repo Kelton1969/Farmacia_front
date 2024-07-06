@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    display: flex;
+    padding: 3rem;
+    height: 89%;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.conteudo img {
+    margin-left: 5%;
+    width: 120vh;
+    border: 1px solid transparent;
+    transition: ease-in-out 0.5s;
+}
+
+.partedois {
+    height: 100vh;
+    padding: 3rem;
+    color: aliceblue;
+    background: rgb(122, 3, 3);
+    padding-top: 15%;
+    text-align: center;
+}
+    .partedois  h2{
+        font-size: 3rem;
+    }
+
+.partedois img {
+    width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.compras {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagem {
+    padding-top: 1.5rem;
+    background: white;
+    height: 17rem;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.8s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem a {
+    background: red;
+    padding: 0.8rem;
+    text-align: center;
+    width: 10rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.compra {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    text-align: center;
+    color: gray;
+    justify-content: center;
+}
+
+.description {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.imagem.show {
+    height: auto;
+}
+
+.imagem.show .description {
+    display: block;
+    opacity: 1;
+    max-height: 200px; /* Ajuste conforme necessário */
+    transform: translateY(0);
+}
+
+.imagem.show .compra a {
+    opacity: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo modificada */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0; /* Começa com opacidade zero */
+}
+
+.close-button.show {
+    opacity: 1; /* Mostra o botão quando a classe show é aplicada */
+}
+
+.close-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Mudança na cor ao passar o mouse */
+}.description button{
+    
+    font-size: 2rem;
+}
