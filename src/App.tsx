@@ -1,20 +1,31 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Navbar from "./components/navbar/Navbar"
-import Home from "./pages/home/Home"
-import Footer from "./components/footer/Footer"
+import React from 'react';
+import './App.css';
 
-function App(){
-  return(
-    <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home/Home';
+import ListaCategorias from './components/categoria/listaCategorias/ListaCategorias';
+import FormularioCategoria from './components/categoria/formularioCategorias/FormularioCategorias';
 
-    </Routes>
-    <Footer />
-    </BrowserRouter>
-  )
+
+function App() {
+  return (
+    <>
+
+        <BrowserRouter>
+          <Navbar />
+          <div className='min-h-[80vh] m-0'>
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/categorias" element={<ListaCategorias />} />
+              <Route path="/cadastroCategoria" element={<FormularioCategoria />} />
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
+
+    </>
+  );
 }
-
-export default App
+export default App;

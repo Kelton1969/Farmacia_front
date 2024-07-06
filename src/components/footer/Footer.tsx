@@ -1,15 +1,23 @@
-import "./Footer.css"
+import React from 'react'
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Footer() {
+ 
   return (
-    <div className="h-28">
-      <div className="flex justify-center ">
-      <LinkedinLogo className="ml-2 mr-2"size={48} weight='bold' />
-      <InstagramLogo className="ml-2 mr-2"size={48} weight='bold' />
-      <FacebookLogo className="ml-2 mr-2"size={48} weight='bold' />
-      </div>
-    </div>
+    <>
+        <div className="flex justify-center bg-red-700 text-white">
+          <div className="container flex flex-col items-center py-4">
+            <p className='text-xl font-bold flex'>Farmacia </p>
+         
+            <p className='text-lg'>Acesse nossas redes sociais:</p>
+            <div className='flex gap-2'>
+              <LinkedinLogo size={48} weight='bold' />
+              <InstagramLogo size={48} weight='bold' />
+              <FacebookLogo size={48} weight='bold' />
+            </div>
+          </div>
+        </div>
+      </>
   )
 }
 

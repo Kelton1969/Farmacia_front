@@ -23,5 +23,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "../../../Downloads/farmacia-gabriella-CRUD-categoria/farmacia-gabriella-CRUD-categoria/src/pages/home/Home.tsx"]
 }
