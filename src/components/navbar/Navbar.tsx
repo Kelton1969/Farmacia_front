@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {Pill} from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 

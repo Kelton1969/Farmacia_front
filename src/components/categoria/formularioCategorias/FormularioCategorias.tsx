@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import  { ChangeEvent, useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import Categoria from '../../../models/Categoria';
 import { atualizar, buscar, cadastrar } from '../../../service/Service';
 import { toastAlerts } from '../../../util/toastAlerts';
