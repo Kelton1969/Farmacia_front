@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import { buscar } from '../../../service/Service';
