@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
-import { useNavigate } from 'react-router-dom';
 import { buscar } from '../../../service/Service';
 import CardCategorias from '../cardCategorias/CardCategorias';
 import Categoria from '../../../models/Categoria';
 
 function ListaCategorias() {
   const [categorias, setCategorias] = useState<Categoria[]>([]);
-
-  let navigate = useNavigate();
 
   async function buscarCategorias() {
     try {

@@ -1,12 +1,11 @@
-
-import { Link } from 'react-router-dom'
-import Categoria from '../../../models/Categoria'
+import { Link } from 'react-router-dom';
+import Categoria from '../../../models/Categoria';
 
 interface CardCategoriasProps {
   categoria: Categoria;
 }
 
-function CardCategorias({categoria}: CardCategoriasProps) {
+function CardCategorias({ categoria }: CardCategoriasProps) {
   return (
     <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
       <header className='py-2 px-6 bg-sky-700 text-white font-bold text-2xl'>{categoria.nome}</header>
@@ -20,7 +19,7 @@ function CardCategorias({categoria}: CardCategoriasProps) {
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default CardCategorias
+export default CardCategorias;
